@@ -66,7 +66,7 @@ sg_algorithm = 1
 
 def ingest():
 
-    data = pd.read_csv('/Users/isabelaruizroque/Documentos/Mackenzie - Macbook/Mestrado/Dissertação/Bases/wang_datasetComDisgeSurprise-2.txt', encoding= "ISO-8859-1")
+    data = pd.read_csv('wang_datasetComDisgeSurprise-2.txt', encoding= "ISO-8859-1")
     data['Emotion'] = list(data['Emotion'].map(str))
     data = data[data['Tweet'].isnull() == False]
     data.reset_index(inplace=True)
